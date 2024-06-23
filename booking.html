@@ -1,0 +1,135 @@
+<html>
+<head>
+    <title>Booking Page</title>
+    <script>
+        function submitForm() {
+            alert("Booking Successful!");
+        }
+    </script>
+	<style>
+	body{
+		background-color:skyblue;
+		font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+		}
+		header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        header img {
+            max-width: 150px;
+            vertical-align: middle;
+        }
+        header h1 {
+            display: inline-block;
+            margin: 0;
+            padding-left: 20px;
+            vertical-align: middle;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            overflow: hidden;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            display: inline-block;
+            padding: 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: skyblue;
+        }
+		footer {
+            background-color: #333;
+            color: #fff;
+            padding: 16px;
+            text-align: center;
+        }
+		</style>
+</head>
+<body>
+	<header>
+        <img src="logo1.WEBP" alt="Railway Logo">
+        <h1>Railway Booking Portal</h1>
+    </header>
+    <nav>
+        <a href="index3.html">Home</a>
+        <a href="index2.html">Schedules</a>
+        <a href="booking.html">Booking</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+    </nav>
+    <center><h1>Book Your Train Tickets</h1></center>
+	<center>
+    <form onsubmit="submitForm(); return false;">
+		<main>
+        <section class="passenger-details">
+            <h1>Enter Passenger Details</h1>
+            <form action="confirmation.html" method="POST" onsubmit="showBookingAlert()">
+                <label for="fullName"><b>Full Name:<b></label><br>
+                <input type="text" id="fullName" name="fullName" required><br><br>
+
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" required><br><br>
+
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label><br><br>
+
+                <label for="idProof">ID Proof:</label><br>
+                <select id="idProof" name="idProof" required><br><br>
+                    <option value="aadhar">Aadhar Card</option>
+                    <option value="passport">Passport</option>
+                    <option value="drivingLicense">Driving License</option><br><br>
+                </select><br><br>
+
+                <label for="idNumber">ID Number:</label><br>
+                <input type="text" id="idNumber" name="idNumber" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+           
+       
+        <label for="from">From:</label><br>
+        <input type="text" id="from" name="from" required><br><br>
+
+        <label for="to">To:</label><br>
+        <input type="text" id="to" name="to" required><br><br>
+
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="time">Time:</label><br>
+        <input type="time" id="time" name="time" required><br><br>
+
+        <label for="day">Day:</label><br>
+        <input type="text" id="day" name="day" required><br><br>
+
+        <input type="submit" value="Submit">
+    </center>
+
+        </section>
+		</main>
+	</form>
+	<center>
+	<a href="index3.html"><h2>Go to backpage<h2></a>
+	<a href="signin.html"><h4>Next<h4></a>
+	</center>
+	<footer>
+        <p>Contact: 123-456-7890 | Email: info@railwaybooking.com</p>
+        <p>Address: 123 Railway St, City, Country</p>
+    </footer>
+</body>
+</html>
